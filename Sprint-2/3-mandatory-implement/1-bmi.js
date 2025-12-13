@@ -16,4 +16,9 @@
 
 function calculateBMI(weight, height) {
     // return the BMI of someone based off their weight and height
+    let BMI = weight / (height * height);
+    return BMI.toFixed(1);
 }
+
+console.log (`The MBI of someone who weights 80kg and is 1.80 m tall is ${calculateBMI(80,1.8)}`)
+console.log (`The MBI of someone who weights 55kg and is 1.60 m tall is ${calculateBMI(55,1.6)}`)
