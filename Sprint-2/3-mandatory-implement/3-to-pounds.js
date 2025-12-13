@@ -8,10 +8,10 @@
 const penceString = "43999p";
 
 function toPounds(penceString){
-    let string = penceString.substring(0,penceString.length-1)
+    let string = penceString.substring(0, penceString.length-1)
     return `${(string / 100).toFixed(2)}`
 }
 
 console.log(toPounds(penceString));
 
-// consume the input is a number with two decimal digits and unit p. It should work as expected.
+// consume the input is a number with decimal digits and unit p. It should work as expected.

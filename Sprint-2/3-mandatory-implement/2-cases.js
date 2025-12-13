@@ -16,10 +16,10 @@
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 const str = "hello there";
 
-function toSnake (str) { 
+function toSnakeCase (str) { 
    return str
     .toUpperCase()
     .replace(" ", "_");
 }
 
-console.log(toSnake(str));
+console.log(toSnakeCase(str));
