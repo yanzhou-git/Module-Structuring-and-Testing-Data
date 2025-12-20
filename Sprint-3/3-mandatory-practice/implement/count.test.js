@@ -1,8 +1,8 @@
 // implement a function countChar that counts the number of times a character occurs in a string
-const countChar = require("./count");
+const countChar = require("./count.js");
 // Given a string str and a single character char to search for,
 // When the countChar function is called with these inputs,
-// Then it should:
+// Then it should: return number 5.
 
 // Scenario: Multiple Occurrences
 // Given the input string str,
@@ -22,3 +22,9 @@ test("should count multiple occurrences of a character", () => {
 // And a character char that does not exist within the case-sensitive str,
 // When the function is called with these inputs,
 // Then it should return 0, indicating that no occurrences of the char were found in the case-sensitive str.
+test("should count 0 in a string that does not contain such character", () => {
+const str1 = "abcdefg";
+  const char1 = "h";
+  const count1 = countChar(str1, char1);
+  expect(count1).toEqual(0);
+});
