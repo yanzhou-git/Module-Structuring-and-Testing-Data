@@ -13,13 +13,26 @@ To be valid, a password must:
 - Must not be any previous password in the passwords array. 
 
 You must breakdown this problem in order to solve it. Find one test case first and get that working
-*/
-const isValidPassword = require("./password-validator");
+
+
+const isValidPassword = require("./password-validator.js");
 test("password has at least 5 characters", () => {
     // Arrange
     const password = "12345";
     // Act
     const result = isValidPassword(password);
+    // Assert
+    expect(result).toEqual(true);
+}
+);
+*/
+
+const versatilPassword = require("./password-validator.js");
+test("password fulfill all requirement", () => {
+    // Arrange
+    const password = "12Ab**";
+    // Act
+    const result = versatilPassword(password);
     // Assert
     expect(result).toEqual(true);
 }
